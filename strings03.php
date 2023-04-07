@@ -1,15 +1,23 @@
 <?php
 
 $email = 'testedoteste@dominio.com';
+$senha = 'SenhaForte123';
 
 $atPosition = strpos($email, '@');
 
-//Da 0 até a oitava posicao
 $emailName = substr($email, 0 , $atPosition).PHP_EOL;
 
-//da 9 ate o final
-$emailDomain = substr($email, $atPosition+1);
+$emailDomain = substr($email, $atPosition+1).PHP_EOL;
+
+$passwordSize = strlen($senha);
+//armazena em bytes. Caracteres com acentos ocupam dois bytes
 
 echo $emailName;
 
 echo $emailDomain;
+
+if($passwordSize > 8){
+   echo "Senha forte";
+} else {
+   echo "Senha fraca!";
+}
