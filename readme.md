@@ -11,6 +11,7 @@ substr
 strpos
 
 strlen
+mb_strlen
 
 strtoupper
 

@@ -21,3 +21,7 @@ if($passwordSize > 8){
 } else {
    echo "Senha fraca!";
 }
+
+$nomeCompleto = 'Caio Cabral';
+
+explode(' ', $nomeCompleto);
