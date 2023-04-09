@@ -24,4 +24,6 @@ if($passwordSize > 8){
 
 $nomeCompleto = 'Caio Cabral';
 
-explode(' ', $nomeCompleto);
+list($nome, $sobrenome) = explode(' ', $nomeCompleto);
+
+echo $nome." ".$sobrenome;
