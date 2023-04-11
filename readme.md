@@ -16,3 +16,11 @@ mb_strlen
 strtoupper
 
 strtolower
+
+explode
+
+implode
+
+trim, ltrim, rtrim
+
+str_replace
